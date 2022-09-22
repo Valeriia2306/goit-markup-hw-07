@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
+  <body>
+   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
@@ -25,29 +26,37 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
- <header class="page-header">
-    <div class="container flex">
-      <nav class="nav main-nav">
-        <a class="logo" href="/index.html"
-          ><span class="web">Web</span>Studio</a
-        >
-        <ul class="nav-list list">
-          <li class="item"><a href="./index.html" class="nav-link">Студія</a></li>
-          <li class="item"><a href="" class="nav-link current">Портфоліо</a></li>
-          <li class="item"><a href="" class="nav-link">Контакти</a></li>
-        </ul>
-      </nav>
-         <ul class="contacts list">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="contacts-link">
-              <svg class="icon-header" width="16" height="12">
+    <header class="page-header">
+      <div class="container page-header__container">
+        <nav class="page-header__nav">
+          <a class="logo" href="/index.html"
+            ><span class="logo__label">Web</span>Studio</a
+          >
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a href="./index.html" class="nav-list__link"
+                >Студія</a
+              >
+            </li>
+            <li class="nav-list__item">
+              <a href="" class="nav-list__link nav-list__link--current">Портфоліо</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="" class="nav-list__link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a href="mailto:info@devstudio.com" class="contacts__link">
+              <svg class="contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg#envelope"></use></svg
               >info@devstudio.com
             </a>
           </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="contacts-link"
-              ><svg class="icon-header" width="10" height="16">
+          <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__link"
+              ><svg class="contacts__icon" width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use></svg
               >+38 096 111 11 11</a
             >
@@ -262,29 +271,29 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="container flex-footer">
-        <div class="addres-container">
-          <a class="logo white" href="/index.html"
-            ><span class="web">Web</span>Studio</a
+       <footer class="footer">
+      <div class="container footer-box">
+        <div class="footer__addres-container">
+          <a class="logo footer__logo" href="/index.html"
+            ><span class="logo__label">Web</span>Studio</a
           >
           <address class="addres">
-            <ul class="addres-list list">
-              <li>
+            <ul class="addres__list">
+              <li class="addres__item">
                 <a
                   href="https://https://goo.gl/maps/xEbZtE4H6aQsBuQM7"
-                  class="addres-link-map"
+                  class="addres__link addres__link--color"
                 >
                   м. Київ, пр-т Лесі Українки, 26
                 </a>
               </li>
-              <li class="addres-mail list">
-                <a href="mailto:info@devstudio.com" class="addres-link"
+              <li class="addres__item">
+                <a href="mailto:info@devstudio.com" class="addres__link"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="addres-tel list">
-                <a href="tel:+380961111111" class="addres-link"
+              <li class="addres__item">
+                <a href="tel:+380961111111" class="addres__link"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -292,57 +301,93 @@
           </address>
         </div>
         <div class="footer-social">
-          <h2 class="footer-social-title">приєднуйтесь</h2>
-          <ul class="social list">
-            <li class="social-item">
+          <h2 class="footer-social__title">приєднуйтесь</h2>
+          <ul class="socials">
+            <li class="socials__item">
               <a
-                class="social-link"
+                class="socials__link socials__link--bcg-color"
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener nofollow noreferrer"
               >
-                <svg class="social-icon" width="20" height="20">
+                <svg
+                  class="socials__icon socials__icon--color"
+                  width="20"
+                  height="20"
+                >
                   <use href="./images/icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item">
+            <li class="socials__item">
               <a
-                class="social-link"
+                class="socials__link socials__link--bcg-color"
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener nofollow noreferrer"
               >
-                <svg class="social-icon" width="20" height="20">
+                <svg
+                  class="socials__icon socials__icon--color"
+                  width="20"
+                  height="20"
+                >
                   <use href="./images/icons.svg#twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item">
+            <li class="socials__item">
               <a
-                class="social-link"
-                href="https://www.linkedin.com/"
+                class="socials__link socials__link--bcg-color"
+                href="https://www.facebook.com/"
                 target="_blank"
                 rel="noopener nofollow noreferrer"
               >
-                <svg class="social-icon" width="20" height="20">
+                <svg
+                  class="socials__icon socials__icon--color"
+                  width="20"
+                  height="20"
+                >
                   <use href="./images/icons.svg#facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item">
+            <li class="socials__item">
               <a
-                class="social-link"
+                class="socials__link socials__link--bcg-color"
                 href="https://www.linkedin.com/"
                 target="_blank"
                 rel="noopener nofollow noreferrer"
               >
-                <svg class="social-icon" width="20" height="20">
+                <svg
+                  class="socials__icon socials__icon--color"
+                  width="20"
+                  height="20"
+                >
                   <use href="./images/icons.svg#linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
+        </div>
+
+        <div class="subscription__container">
+          <strong class="subscription__title">Підпишіться на розсилку</strong>
+          <form class="subscription__form" name="subscription">
+            <input
+              class="subscription__email"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              required
+              autocomplete="off"
+            />
+            <button class="subscription__button" type="submit">
+              Підписатися
+              <svg class="subscription__icon" width="24" height="24">
+                <use href="./images/icons/icon-send-sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
