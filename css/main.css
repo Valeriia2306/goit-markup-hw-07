@@ -1033,12 +1033,6 @@ li {
           transform: translateY(0);
 }
 
-.projects-link:hover .projects-overlay,
-.projects-link:focus .projects-overlay {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-
 .overlay-desc {
   position: absolute;
   font-family: Roboto;
